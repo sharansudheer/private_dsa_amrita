@@ -95,8 +95,6 @@ int getRear() {
 int main() {
     insertFront(5);
     insertRear(10);
-    insertRear(11);
-    insertFront(19);
     cout<<getFront()<<endl;
     cout<<getRear()<<endl;
     if (isFull()) {
