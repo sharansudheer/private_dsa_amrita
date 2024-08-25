@@ -1,25 +1,23 @@
-//Write a Program to recursively find the length of the inputed string
-#include <iostream>
-#include <string>
+//Recursive Linear Search Algorithm
 
-using namespace std;
-int length_str(char* sentence){
+#include <stdio.h>
 
-    if (*sentence == '\0'){
-        return 0;
-    }
-    
-    else{
-        return 1 +length_str(sentence + 1);
-    }
-
-}
-int main()
+// Define a function to perform the linear search
+int linearSearch(int arr[], int size, int key)
 {
-    char *str = new char[0];
-    cout<<"Enter a string"<<"\n";
-    cin.getline(str,100);
-    
-    cout<<length_str(str);
-    delete [] str;
+    // If the size of the array is zero, return -1
+    if (size == 0) {
+        return -1;
+    }
+
+    // Check if the element at the current index
+    // is equal to the key
+    if (arr[size - 1] == key) {
+        
+        // If equal, return the index
+        return size - 1;
+    }
+    // If not equal, call the function again
+    // with the size reduced by 1
+    return linearSearch(arr, size - 1, key);
 }
