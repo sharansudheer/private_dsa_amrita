@@ -1,3 +1,5 @@
+# Questions for the Lab 2 - 06/08/2024
+
 1. Review of linear data structures(ADTs):
 Stack, queue, list
 2. Implement the above using arrays
