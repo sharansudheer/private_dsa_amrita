@@ -1,4 +1,3 @@
-//Write a Program to recursively find the length of the inputed string
 #include <iostream>
 #include <string>
 
